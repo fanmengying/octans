@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>User Account</title>
+    <link rel="stylesheet" type="text/css" href="user.css" />
+</head>
+<style>
+    body {
+        background-color: white;
+    }
+</style>
+
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Company Name</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="user.html"><span class="glyphicon glyphicon-user"></span> User</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="jumbotron text-center">
+    <h1 class="display-3">User Account</h1>
+    <p class="lead">Change user name or delete awards given</p>
+</div>
+
+<div class="container">
+    <div class="container">
+        <form class="form-horizontal" action="#">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="name">User Name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="name" placeholder="Enter new name" name="name">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-dark">Update!</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="container">
+        <form class="form-horizontal" action="#">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="award">Delete Award</label>
+                <div class="col-sm-10">
+                    <select class="form-control" id="award" name="award">
+                        <option>10/10/2017 August Lautt</option>
+                        <option>10/10/2017 Catherine Filus</option>
+                        <option>10/10/2017 Mengying Fan</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-dark">Delete!</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
