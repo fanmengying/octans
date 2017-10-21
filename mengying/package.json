@@ -1,0 +1,29 @@
+{
+  "name": "cs467",
+  "version": "0.0.0",
+  "description": "project for cs467",
+  "main": "app.js",
+  "repository": "",
+  "author": "fanme@oregonstate.edu",
+  "dependencies": {
+    "async": "~0.2.8",
+    "body-parser": "^1.18.2",
+    "bootstrap": "^3.3.7",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "express": "~3.2.4",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.6",
+    "favicon": "0.0.2",
+    "flash": "^1.1.0",
+    "jquery": "^3.2.1",
+    "mysql": "^2.15.0",
+    "passport": "^0.4.0",
+    "path": "^0.12.7",
+    "serve-favicon": "^2.4.5",
+    "socket.io": "~0.9.14"
+  },
+  "devDependencies": {
+    "express": "^4.13.4"
+  }
+}

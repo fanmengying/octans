@@ -1,0 +1,66 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <p class="nav navbar-brand">Company Name</p>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span>{{user.email}}</a></li>
+        <li><a href="/"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+<div class="col-lg-2 ">
+  <a href="/adduser"><span class="glyphicon glyphicon-plus"></span>add a user</a>
+  </div>
+<div class="col-lg-10 ">
+  <span class="pull-right">
+    <form  action="/viewuser" method="GET">
+      <select name ="selecttype">
+        <option name="selecttype" value="all" selected="selected">All</option>
+        <option name="selecttype" value="normal">Normal user</option>
+        <option name="selecttype" value="admin">Administrator</option>
+        </select>
+        </form>
+      </span>
+  </div>
+  <div class="col-lg-12"> <p> </P>
+  </div>
+</div>
+
+<div class="container">
+  <table class="table  table-bordered">
+      <thead >
+        <tr>
+          <th>User name</th>
+          <th>User type</th>
+          <th>Email Address</th>
+          <th>Time created</th>
+          <th>View</th>
+          <th>Edit</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+      {{#each result}}
+       <tr>
+        <td> {{this.name}} </td>
+        <td> {{this.role}}</td>
+        <td>{{this.email}}</td>
+        <td> {{this.creation}} </td>
+        <td> <a  href="/award"> <span class="glyphicon glyphicon-eye-open" href="/award"></span></a></td>
+        <td> <a  href="/edit"><span class="glyphicon glyphicon-pencil"></span></a></td>
+        <td> <a id = {{this.id}}><span class="glyphicon glyphicon-trash"></span></a></td>
+      </tr>
+      {{/each}}
+      </tbody>
+    </table>
+</div>
+
+
+
+
+

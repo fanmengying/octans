@@ -1,0 +1,40 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <p class="nav navbar-brand">Company Name</p>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span>{{user.email}}</a></li>
+        <li><a href="/"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <table class="table  table-bordered">
+      <thead >
+        <tr>
+          <th>Award type</th>
+          <th>Awarder</th>
+          <th>Awardee</th>
+          <th>Time awarded</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+        <td> type1 </td>
+        <td> Mengying Fan</td>
+        <td> Kelly Sun</td>
+        <td> 2017-07-01 </td>
+      </tr>
+       <tr>
+        <td> {{type}} </td>
+        <td> {{awarder}}</td>
+        <td>{{awardee}}</td>
+        <td> {{timeawarded}} </td>
+      </tr>
+      </tbody>
+    </table>
+</div>

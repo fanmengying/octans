@@ -1,0 +1,82 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <p class="nav navbar-brand">Company Name</p>
+    </div>
+  </div>
+</nav>
+<div class="row">
+  <div class="col-lg-6 col-lg-offset-3">
+    <div class="well">
+      <form class="form-horizontal" data-toggle="validator" role="form" action='/' method='post'>
+        <fieldset>
+          <legend>Create A New Account</legend>
+          
+          <!-- name -->
+          <div class="form-group">
+            <label for="firstName" class="col-lg-2 control-label" >Name</label>
+              <div class="col-lg-10">
+                <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Name" >
+                <div class="help-block with-errors"></div>
+              </div>
+          </div>
+          
+          
+          <!-- email -->
+          <div class="form-group">
+            <label for="email" class="col-lg-2 control-label">Email</label>
+              <div class="col-lg-10">
+                <input type="text" class="form-control" id="email" name="email" placeholder="Email" data-error="Please enter a valid e-mail address" required >
+                <div class="help-block with-errors"></div>
+              </div>
+          </div>
+          
+          <!-- password -->
+          <div class="form-group">
+            <label for="password" class="col-lg-2 control-label">Password</label>
+              <div class="col-lg-10">
+                <input type="password" class="form-control" id="password" name="password" placeholder="Password" data-minlength="8" required>
+                <div class="help-block">Password must be at least 8 characters</div>
+              </div>
+          </div>
+          
+          <!-- password confirm -->
+          <div class="form-group">
+            <label for="passwordConfirm" class="col-lg-2 control-label">Confirm Password</label>
+              <div class="col-lg-10">
+                <input type="password" class="form-control" id="passwordConfirm" data-match="#password" data-match-error="Passwords do not match" data-error="Please re-enter password to confirm" placeholder="Confirm" required>
+                <div class="help-block with-errors"></div>
+              </div>
+          </div>
+            
+          <!-- account type -->  
+          <div class="form-group">
+            <label class="col-lg-2 control-label">Account Type</label>
+              <div class="col-lg-10">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="accountType" id="accountTypeBeekeeper" value="1" checked="">
+                      Administrator
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="accountType" id="accountTypeResearcher" value="2">
+                      Normal user
+                  </label>
+                </div>
+              </div>
+           </div>
+    
+           <!-- submit -->
+           <div class="form-group">
+              <div class="col-lg-10 col-lg-offset-2">
+                <button type="submit" class="btn btn-primary">Sign Up</button>
+              </div>
+            </div>
+          
+        </fieldset>
+      </form>
+    </div><!-- well -->
+  </div><!-- col -->
+</div><!-- row -->
